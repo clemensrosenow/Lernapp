@@ -1,0 +1,281 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kadwa', serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+em {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #E9F7F9;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #D4F1F4;
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: #05445E;
+  text-shadow: 0 -3px 4px rgba(0, 0, 0, 0.199);
+}
+
+p {
+  font-size: 1.5rem;
+  color: #75E6DA;
+}
+
+a,
+h4 {
+  font-size: 1.5rem;
+}
+
+em {
+  font-weight: 900;
+}
+
+body {
+  width: 100vw;
+  max-width: 850px;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[14];
+  -ms-grid-columns: 15px (1fr)[7] 15px;
+      grid-template: repeat(14, 1fr)/15px repeat(7, 1fr) 15px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#189AB4), color-stop(70%, #05445E));
+  background: linear-gradient(#189AB4, #05445E 70%);
+  margin: auto;
+}
+
+nav {
+  width: 100vw;
+  background-color: #D4F1F4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  grid-column: span 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+}
+
+nav a {
+  color: #05445E;
+  text-decoration: none;
+}
+
+nav a em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+nav .burger {
+  width: 2rem;
+  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .burger .bar {
+  height: 3px;
+  width: 2rem;
+  background-color: #05445E;
+  border-radius: 2px;
+}
+
+.heading {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-area: 3 / 3 / 5 / span 5;
+  text-align: center;
+}
+
+.instruction {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-area: 5 / 2 / span 2 / span 7;
+}
+
+.instruction p {
+  float: right;
+  white-space: pre;
+  text-align: right;
+}
+
+.card {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-area: 7 / 2 / span 5 / span 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 90%;
+  border-radius: 18px;
+  padding: 10% 0 7.5%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #D4F1F4), to(#189AB4));
+  background: linear-gradient(#D4F1F4 30%, #189AB4);
+  position: relative;
+  /*.secondLayer {
+            position: absolute;
+            opacity: 0.66;
+            transform: translateY(-6.8rem) scale(0.92);
+            z-index: -1;
+        } 
+        .thirdLayer {
+            position: absolute;
+            opacity: 0.33;
+            transform: translateY(-8.3rem) scale(0.84);
+            z-index: -2;
+        } */
+}
+
+.card .answers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  gap: 1.2rem  2rem;
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.card .answers .box {
+  padding: 10% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  border: none;
+}
+
+.card .answers .verb {
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.301);
+}
+
+.card .answers .first {
+  background: -webkit-gradient(linear, right bottom, left top, from(#75E6DA), to(#189AB4));
+  background: linear-gradient(to left top, #75E6DA, #189AB4);
+  -webkit-box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.26);
+          box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.26);
+}
+
+.card .answers .second {
+  background: -webkit-gradient(linear, left bottom, right top, from(#75E6DA), to(#189AB4));
+  background: linear-gradient(to right top, #75E6DA, #189AB4);
+  -webkit-box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.26);
+          box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.26);
+}
+
+.card .answers .third {
+  background: -webkit-gradient(linear, right top, left bottom, from(#75E6DA), to(#189AB4));
+  background: linear-gradient(to left bottom, #75E6DA, #189AB4);
+  -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.26);
+          box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.26);
+}
+
+.card .answers .fourth {
+  background: -webkit-gradient(linear, left top, right bottom, from(#75E6DA), to(#189AB4));
+  background: linear-gradient(to right bottom, #75E6DA, #189AB4);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.26);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.26);
+}
+
+.stats {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-area: -4 / 3 / span 2 / span 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#189AB4), to(#189ab49d));
+  background: linear-gradient(to right, #189AB4, #189ab49d);
+  border-radius: 10px;
+  padding: 0 2rem;
+}
+
+.stats p {
+  text-align: right;
+  color: #D4F1F4;
+}
+
+.stats h4 {
+  font-weight: 700;
+  color: white;
+}
+
+img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-area: 4 / 1 / -2 / span 9;
+  mix-blend-mode: lighten;
+  width: 100%;
+  opacity: 10%;
+  z-index: -3;
+}
+/*# sourceMappingURL=style.css.map */
