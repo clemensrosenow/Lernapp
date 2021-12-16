@@ -59,10 +59,9 @@ em {
 
 body {
     width: 100vw;
-    max-width: 850px;
     height: 100vh;
     display: grid;
-    grid-template: repeat(14, 1fr) / 15px repeat(7, 1fr) 15px;
+    grid-template: repeat(14, 1fr) / 5% repeat(7, 1fr) 5%;
     overflow: hidden;
     background: linear-gradient(#189AB4, #05445E 70%);
     margin: auto;
@@ -131,19 +130,7 @@ nav {
     padding: 10% 0 7.5%;
     background: linear-gradient(#D4F1F4 30%, $blue-primary);
     position: relative;
-    /*.secondLayer {
-            position: absolute;
-            opacity: 0.66;
-            transform: translateY(-6.8rem) scale(0.92);
-            z-index: -1;
-        } 
-        .thirdLayer {
-            position: absolute;
-            opacity: 0.33;
-            transform: translateY(-8.3rem) scale(0.84);
-            z-index: -2;
-        } */
-
+    
     .answers {
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
@@ -158,6 +145,10 @@ nav {
             align-items: center;
             border-radius: 10px;
             border: none;
+            transition: .5s ease-in-out;
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .verb {
@@ -214,4 +205,21 @@ img {
     width: 100%;
     opacity: 10%;
     z-index: -3;
+}
+
+@media (min-width: 600px) {
+    body {
+        grid-template-columns: 20% repeat(7, 1fr) 20%;
+    }
+}
+@media (min-width: 900px) {
+    body {
+        grid-template-columns: 30% repeat(7, 1fr) 30%;
+    }
+}
+
+@media (min-width: 1500px) {
+    body {
+        grid-template-columns: 38% repeat(7, 1fr) 38%;
+    }
 }

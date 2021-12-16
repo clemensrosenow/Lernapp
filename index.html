@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple past Trainer</title>
+    <meta name="author" content="Clemens Rosenow">
+    <meta name="description" content="Verbessere deine Englisch Skills mit dem Simple Past Trainer für unregelmäßige Verben von English-Max!">
+    <title>Simple Past Trainer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kadwa&family=Poppins:wght@500;700;900&display=swap"
@@ -31,21 +33,19 @@
         <p> Wähle die richtige                     <br> Vergangenheitsform!</p>
     </div>
     <div class="card">
-        <!-- <div class="card secondLayer"></div>
-            <div class="card thirdLayer"></div> -->
         <h3 class="question">(to) read</h3>
         <div class="answers">
-            <button class="box first">
+            <button onclick="buttonInput(0)" class="box first">
                 <p class="verb">read</p>
             </button>
-            <button class="box second">
+            <button onclick="buttonInput(1)" class="box second">
                 <p class="verb">readed</p>
             </button>
-            <button class="box third">
+            <button onclick="buttonInput(2)" class="box third">
                 <p class="verb">rode</p>
             </button>
-            <button class="box fourth">
-                <p class="verb">ridden</p>
+            <button onclick="buttonInput(3)" class="box fourth">
+                <p class="verb">ridden</p> 
             </button>
 
         </div>
@@ -53,13 +53,13 @@
 
     <div class="stats">
         <div class="column">
-            <h4 class="number">13</h4>
-            <h4 class="number">84%</h4>
-            <h4 class="number">8</h4>
+            <h4 class="number">0%</h4>
+            <h4 class="number">0</h4>
+            <h4 class="number">0</h4>
         </div>
         <div class="column">
-            <p>beantwortete Fragen</p>
             <p>richtig gelöst</p>
+            <p>Highscore</p>
             <p>in Folge</p>
         </div>
     </div>

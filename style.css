@@ -55,13 +55,12 @@ em {
 
 body {
   width: 100vw;
-  max-width: 850px;
   height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[14];
-  -ms-grid-columns: 15px (1fr)[7] 15px;
-      grid-template: repeat(14, 1fr)/15px repeat(7, 1fr) 15px;
+  -ms-grid-columns: 5% (1fr)[7] 5%;
+      grid-template: repeat(14, 1fr)/5% repeat(7, 1fr) 5%;
   overflow: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(#189AB4), color-stop(70%, #05445E));
   background: linear-gradient(#189AB4, #05445E 70%);
@@ -168,18 +167,6 @@ nav .burger .bar {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #D4F1F4), to(#189AB4));
   background: linear-gradient(#D4F1F4 30%, #189AB4);
   position: relative;
-  /*.secondLayer {
-            position: absolute;
-            opacity: 0.66;
-            transform: translateY(-6.8rem) scale(0.92);
-            z-index: -1;
-        } 
-        .thirdLayer {
-            position: absolute;
-            opacity: 0.33;
-            transform: translateY(-8.3rem) scale(0.84);
-            z-index: -2;
-        } */
 }
 
 .card .answers {
@@ -206,6 +193,12 @@ nav .burger .bar {
           align-items: center;
   border-radius: 10px;
   border: none;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.card .answers .box:hover {
+  cursor: pointer;
 }
 
 .card .answers .verb {
@@ -277,5 +270,26 @@ img {
   width: 100%;
   opacity: 10%;
   z-index: -3;
+}
+
+@media (min-width: 600px) {
+  body {
+    -ms-grid-columns: 20% (1fr)[7] 20%;
+        grid-template-columns: 20% repeat(7, 1fr) 20%;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    -ms-grid-columns: 30% (1fr)[7] 30%;
+        grid-template-columns: 30% repeat(7, 1fr) 30%;
+  }
+}
+
+@media (min-width: 1500px) {
+  body {
+    -ms-grid-columns: 38% (1fr)[7] 38%;
+        grid-template-columns: 38% repeat(7, 1fr) 38%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
